@@ -1,11 +1,11 @@
-- name: printing the variables 
-  hosts: localhost
-  vars: 
-    name:          chiru
-    age: 25
-    course: devops
+- name: for the lists
+  hosts: localhosts
+  vars:
+    friend_names:
+      - mohan
+      - chiru
+      - vijay
   tasks:
-  - name: performing the differnt types of functions in the strings
+  - name: performing the operations on lists
     ansible.builtin.debug:
-      msg: "the variables in the capital mode is{{name | length}}"
-      
+      msg: " you have total {{friend_names |length}}"
