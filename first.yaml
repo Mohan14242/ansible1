@@ -1,5 +1,5 @@
 - name: for the lists
-  hosts: localhosts
+  hosts: localhost
   vars:
     friend_names:
       - mohan
