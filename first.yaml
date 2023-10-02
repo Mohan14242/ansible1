@@ -8,4 +8,4 @@
   tasks:
   - name: performing the operations on lists
     ansible.builtin.debug:
-      msg: " you have total {{user_info | dict2items}}"
+      msg: " you have total {{user_info | dictsort}}"
