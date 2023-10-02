@@ -1,10 +1,10 @@
-- name: using the register to get the value of the previuos command
+- name: creating the simple condition
   hosts: localhost
+  vars_prompt:
+  - name: name
+    prompt: please enter the name
   tasks:
-  - name: creating the user
-    ansible.builtin.command: id mohan
-    register: username
-    ignore_errors: true
-  - name: printitng the variables
+  - name: checking the length of the string and printing the values
     ansible.builtin.debug:
-      msg: 'the message is {{username}}'
+      msg: "the name you entered is {{name}}"
+    when: {{name | length}} <= 10
