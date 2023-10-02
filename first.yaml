@@ -1,6 +1,9 @@
-- name: primtpign  the variables
+- name: using the register to get the value of the previuos command
   hosts: localhost
   tasks:
-  - name: gettring and display the username 
+  - name: creating the user
+    ansible.builtin.command: id mohan
+    register: username
+  - name: printitng the variables
     ansible.builtin.debug:
-      msg: "the variables fromt eh command line is {{name}}"
+      msg: 'the message is {{username}}'
