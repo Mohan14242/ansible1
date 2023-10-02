@@ -7,5 +7,5 @@
   tasks:
   - name: performing the differnt types of functions in the strings
     ansible.builtin.debug:
-      msg: "the variables in the capital mode is {{name | capitalize}}"
-      msg: "the lower is {{name | lower}}"
+      msg: "the variables in the capital mode is {{name | capitalize}} and upper is {{name | upper  }} and lower is {{name | lower}}"
+      
