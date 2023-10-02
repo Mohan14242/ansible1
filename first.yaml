@@ -1,10 +1,10 @@
 - name: checking the variables
   hosts: localhost
   vars_prompt:
-    - name: name
-      prompt: "enter the value for the varibales "
-    - age: age
-      prompt: 'enter the values for the age'
+  - name: name
+    prompt: "enter the value for the varibales "
+  - age: age
+    prompt: 'enter the values for the age'
   tasks:
   - name: pringitn the variables
     ansible.builtin.debug:
