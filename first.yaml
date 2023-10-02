@@ -1,10 +1,7 @@
 - name: for the lists
   hosts: localhost
   vars:
-    friend_names:
-      - mohan
-      - chiru
-      - vijay
+    friend_names: ["mohan","vijay","chiru"]
   tasks:
   - name: performing the operations on lists
     ansible.builtin.debug:
