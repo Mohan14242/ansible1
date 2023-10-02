@@ -1,15 +1,11 @@
 - name: for the lists
   hosts: localhost
   vars:
-    list1:
-      - 1
-      - 2
-      - 3
-    list2:
-      - 4
-      - 5
-      - 6
+    user_info:
+      user_name: mohan
+      email: mohan14242@gmail.com
+      password: Amohan9676$  
   tasks:
   - name: performing the operations on lists
     ansible.builtin.debug:
-      msg: " you have total {{list1 |product(list2)}}"
+      msg: " you have total {{user_info | dict2items}}"
