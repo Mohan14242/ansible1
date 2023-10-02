@@ -12,4 +12,4 @@
   tasks:
   - name: performing the operations on lists
     ansible.builtin.debug:
-      msg: " you have total {{list1 | combine(list2)}}"
+      msg: " you have total {{list1+list2}}"
