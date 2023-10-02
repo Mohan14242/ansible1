@@ -7,4 +7,4 @@
   - name: checking the length of the string and printing the values
     ansible.builtin.debug:
       msg: "the name you entered is {{name}}"
-    when: {{name | length}} <= 10
+    when: {{name | length}} < = 10
