@@ -11,4 +11,4 @@
   tasks:
   - name: performing the operations on lists
     ansible.builtin.debug:
-      msg: " you have total {{user_info | combine(friend_info)}}"
+      msg: " you have total {{user_info | omit('friends')}}"
