@@ -1,11 +1,10 @@
-- name: checking the variables
+- name: printing the variables 
   hosts: localhost
-  vars_prompt:
-  - name: name
-    prompt: "enter the value for the varibales "
-  - age: age
-    prompt: 'enter the values for the age'
+  vars: 
+    name: chiru
+    age: 25
+    course: devops
   tasks:
-  - name: pringitn the variables
+  - name: performing the differnt types of functions in the strings
     ansible.builtin.debug:
-      msg: "my name is {{name}} and my age is {{age}}"
+      msg: "the variables in the capital mode is {{name|capitalize}}"
