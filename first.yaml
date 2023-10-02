@@ -3,4 +3,4 @@
   tasks:
   - name: gettring and display the username 
     ansible.builtin.debug:
-      msg: "the username is {{username}} and the passwrod is {{passwrod}}"
+      msg: "the username is {{user_name}} and the passwrod is {{passwrod}}"
