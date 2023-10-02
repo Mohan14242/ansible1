@@ -4,6 +4,7 @@
   - name: creating the user
     ansible.builtin.command: id mohan
     register: username
+    ignore_errors: true
   - name: printitng the variables
     ansible.builtin.debug:
       msg: 'the message is {{username}}'
