@@ -1,11 +1,11 @@
 - name: printing the variables 
   hosts: localhost
   vars: 
-    name: chiru
+    name:          chiru
     age: 25
     course: devops
   tasks:
   - name: performing the differnt types of functions in the strings
     ansible.builtin.debug:
-      msg: "the variables in the capital mode is {{name | capitalize}} and upper is {{name | upper  }} and lower is {{name | lower}}"
+      msg: "the variables in the capital mode is {{name | capitalize}} and upper is {{name | upper  }} and lower is {{name | lower}} and removing the leading and trails ing the white spac fro thestring is {{name | trim}} "
       
