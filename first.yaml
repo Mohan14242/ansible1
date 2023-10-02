@@ -1,8 +1,8 @@
 - name: for the lists
   hosts: localhost
   vars:
-    friend_names: [1,2,3,4,6,7,8,9]
+    friend_names: [1,2,3,4,6,7,8,9,1,2,3,4,5,6,7]
   tasks:
   - name: performing the operations on lists
     ansible.builtin.debug:
-      msg: " you have total {{friend_names | select('even')}}"
+      msg: " you have total {{friend_names | unique }}"
