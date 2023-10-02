@@ -1,12 +1,5 @@
 - name: primtpign  the variables
-  hosts: localhost
-  vars_prompt:
-  - name: username
-    prompt: enter the username
-    private: false
-  - name: passwrod
-    prompt: please enteer the passwrod
-    private: true
+  hosts: web1
   tasks:
   - name: gettring and display the username 
     ansible.builtin.debug:
