@@ -1,14 +1,13 @@
-- name: for the lists
+- name: primtpign  the variables
   hosts: localhost
-  vars:
-    user_info:
-      user_name: mohan
-      email: mohan14242@gmail.com
-      password: Amohan9676$  
-    friend_info:
-      bestfriend: vijaychirupraveen
-      friends: limited below 10
+  vars_prompt:
+  - name: username
+    prompt: enter the username
+    private: false
+  - name: passwrod
+    prompt: please enteer the passwrod
+    private: true
   tasks:
-  - name: performing the operations on lists
+  - name: gettring and display the username 
     ansible.builtin.debug:
-      msg: " you have total {{user_info | omit(email)}}"
+      msg: "the username is {{username}} and the passwrod is {{passwrod}}"
