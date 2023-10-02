@@ -5,7 +5,10 @@
       user_name: mohan
       email: mohan14242@gmail.com
       password: Amohan9676$  
+    friend_info:
+      bestfriend: vijaychirupraveen
+      friends: limited below 10
   tasks:
   - name: performing the operations on lists
     ansible.builtin.debug:
-      msg: " you have total {{user_info | dictsort}}"
+      msg: " you have total {{user_info | combine(friend_info)}}"
