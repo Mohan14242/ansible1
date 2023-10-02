@@ -1,6 +1,6 @@
 - name: primtpign  the variables
-  hosts: web1
+  hosts: localhost
   tasks:
   - name: gettring and display the username 
     ansible.builtin.debug:
-      msg: "the username is {{user_name}} and the passwrod is {{password}}"
+      msg: "the variables fromt eh command line is {{name}}"
