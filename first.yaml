@@ -5,4 +5,4 @@
   tasks:
   - name: performing the operations on lists
     ansible.builtin.debug:
-      msg: " you have total {{friend_names | map('abs')}}"
+      msg: " you have total {{friend_names | select('even')}}"
