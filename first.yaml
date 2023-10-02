@@ -1,9 +1,9 @@
 - name: for the lists
   hosts: localhost
   vars:
-    name: vinay
-    age: 30
-    salary 30k
+    - name: vinay
+    - age: 30
+    - salary: 30k
   tasks:
   - name: performing the operations on lists
     ansible.builtin.debug:
