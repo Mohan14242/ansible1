@@ -1,5 +1,7 @@
 - name: checking the variables
   hosts: localhost
+  vars_files:
+    - variables.yaml
   tasks:
   - name: pringitn the variables
     ansible.builtin.debug:
