@@ -6,4 +6,4 @@
   tasks:
   - name: pringitn the variables
     ansible.builtin.debug:
-      msg: "my name is {name} and my age is {{age}}"
+      msg: "my name is {{name}} and my age is {{age}}"
