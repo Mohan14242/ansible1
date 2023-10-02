@@ -8,4 +8,4 @@
   tasks:
   - name: performing the operations on lists
     ansible.builtin.debug:
-      msg: " you have total {{friend_names |length}}"
+      msg: " you have total {{(friend_names |length)+1}}"
