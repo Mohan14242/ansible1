@@ -1,0 +1,9 @@
+- name: checking the variables
+  hosts: localhost
+  vars:
+    name: "mohan"
+    age: 25
+  tasks:
+  - name: pringitn the variables
+    ansible.builtin.debug:
+      msg: "my name is {name} and my age is {{age}}"
