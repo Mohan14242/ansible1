@@ -3,6 +3,6 @@
   tasks:
   - name: installing the nginx
     become: yes
-    ansible.builtin.debug:
+    ansible.builtin.yum:
       name: nginx
       state: installed
