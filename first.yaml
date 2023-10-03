@@ -1,14 +1,10 @@
 - name: my name is mohan
   hosts: localhost
-  vars:
-    name: mohan
-    skills:
-      - devops
-      - cloud
-    exp:
-      devops: 2
-      cloud: 3
   tasks:
-  - name: printing the variables
-    ansible.builtin.debug:
-      msg: "my name is {{name}} and my skills are {{skills}} and experience in devops is {{exp.devops}} and {{exp.cloud}}"
+  - name: printing the variable
+    ansible.builtin.yum:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+    loop:
+    - {name: nginx ,state: installed}
+    - {name: postman, state: installed}
