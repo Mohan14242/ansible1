@@ -3,5 +3,5 @@
   tasks:
   - name: checking the length of the string and printing the values
     ansible.builtin.debug:
-      msg: "the name you entered is {{user_name}} and the password is {{password}}"
+      msg: "the name you entered is {{ hostvars[web1]['user_name'] }} and the password is {{password}}"
  
