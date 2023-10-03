@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
   - name: printing the loops
-    ansible.builtin.debug;
+    ansible.builtin.debug:
       msg: "the variables is{{item}}"
     loop: 
     - mohan
