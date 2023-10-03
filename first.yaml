@@ -2,6 +2,7 @@
   hosts: localhost
   tasks:
   - name: printing the variable
+    become: yes
     ansible.builtin.yum:
       name: "{{item.name}}"
       state: "{{item.state}}"
