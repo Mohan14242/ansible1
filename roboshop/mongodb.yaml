@@ -1,0 +1,8 @@
+- name: setting up the mongodb
+  hosts: mongodb
+  tasks:
+  - name: copying the mongorepo
+    ansible.builtin.copy:
+      src: mongo.repo
+      dest: vim /etc/yum.repos.d/mongo.repo
+  
