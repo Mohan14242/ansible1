@@ -1,10 +1,7 @@
 - name: creating the simple condition
   hosts: localhost
-  vars_prompt:
-  - name: name
-    prompt: please enter the name
   tasks:
   - name: checking the length of the string and printing the values
     ansible.builtin.debug:
-      msg: "the name you entered is {{name}}"
-    when: name == "mohan"
+      msg: "the name you entered is {{user_name}} and the password is {{password}}"
+ 
