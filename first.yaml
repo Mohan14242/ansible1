@@ -5,6 +5,6 @@
     ansible.builtin.debug;
       msg: "the variables is{{item}}"
     loop: 
-      - mohan
-      - chiru
-      - vijay
+    - mohan
+    - chiru
+    - vijay
