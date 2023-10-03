@@ -6,3 +6,8 @@
     ansible.builtin.yum:
       name: nginx
       state: installed
+  - name: strting the server
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: true
