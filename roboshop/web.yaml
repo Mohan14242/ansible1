@@ -1,0 +1,8 @@
+- name: setting up the webserver for the our website
+  hosts: web
+  tasks:
+  - name: installing the nginx
+    become: yes
+    ansible.builtin.debug:
+      name: nginx
+      state: installed
