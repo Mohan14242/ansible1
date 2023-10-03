@@ -1,11 +1,11 @@
 - name: my name is mohan
   hosts: localhost
   vars:
-    - name: mohan
-    - skills:
+    name: mohan
+    skills:
       - devops
       - cloud
-    - exp:
+    exp:
       devops: 2
       cloud: 3
   tasks:
