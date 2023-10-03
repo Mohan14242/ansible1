@@ -1,7 +1,10 @@
-- name: creating the simple condition
-  hosts: web
+- name: my name is mohan
+  hosts: localhost
   tasks:
-  - name: checking the length of the string and printing the values
-    ansible.builtin.debug:
-      msg: "the name you entered is {{ user_name }} and the password is {{password}}"
- 
+  - name: printing the loops
+    ansible.builtin.debug;
+      msg: "the variables is{{item}}"
+    loop: 
+      - mohan
+      - chiru
+      - vijay
