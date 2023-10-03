@@ -2,9 +2,9 @@
   hosts: localhost
   tasks:
   - name: printing the loops
-    ansible.builtin.debug:
-      msg: "the variables is{{item}}"
+    ansible.builtin.yum:
+      name: {{item}}
+      state: installed
     loop: 
-    - mohan
-    - chiru
-    - vijay
+    - nginx
+    - postman
