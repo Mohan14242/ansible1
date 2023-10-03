@@ -1,5 +1,5 @@
 - name: creating the simple condition
-  hosts: web1
+  hosts: web
   tasks:
   - name: checking the length of the string and printing the values
     ansible.builtin.debug:
