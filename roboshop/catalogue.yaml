@@ -21,7 +21,7 @@
     name: creating the robohopo user
     become: yes
     ansible.builtin.user:
-      name: robohopo
+      name: roboshop
   - name: check the app directory
     ansible.builtin.stat:
       path: /app
