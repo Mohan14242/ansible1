@@ -7,3 +7,7 @@
     ansible.builtin.yum:
       name: nodejs
       state: installed
+  - name: check the robosop user exist or not 
+    ansible.builtin.command: id robosop
+    register: out
+    ignore_errors: true
