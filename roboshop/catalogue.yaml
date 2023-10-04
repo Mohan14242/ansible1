@@ -10,6 +10,8 @@
       state: installed
   - name: check the robosop user exist or not 
     ansible.builtin.command: id robosop
-      msg: "the output is {{out}}"
     register: out
     ignore_errors: true
+  - name: printing theoutput
+    ansible.builtin.command:
+      msg: "output is {{out}}"
