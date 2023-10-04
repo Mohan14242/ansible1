@@ -13,5 +13,5 @@
     register: out
     ignore_errors: true
   - name: printing theoutput
-    ansible.builtin.command:
+    ansible.builtin.debug:
       msg: "output is {{out}}"
