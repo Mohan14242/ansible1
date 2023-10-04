@@ -1,0 +1,9 @@
+- name: setting up the catalogue service
+  hosts: catalogue
+  tasks: 
+  - name: installing the code from the aws s3
+    ansible.builtin.shell: curl -sL https://rpm.nodesource.com/setup_lts.x | bash
+  - name: installing the nodejs 
+    ansible.builtin.yum:
+      name: nodejs
+      state: installed
