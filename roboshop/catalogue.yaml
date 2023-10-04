@@ -12,6 +12,7 @@
     ansible.builtin.command: id robosop
     register: out
     ignore_errors: true
+
   - name: printing theoutput
     ansible.builtin.debug:
       msg: "output is {{out}}"
@@ -25,8 +26,9 @@
     ansible.builtin.stat:
       path: /app
     register: directory
+
   - name: priting the directory stats
-    ansible.builtin.debug;
+    ansible.builtin.debug:
       msg: "output{{directory}}"
   - when: directory.stat.exists == false
     name: creating the directory
