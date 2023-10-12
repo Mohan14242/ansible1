@@ -1,0 +1,5 @@
+- name: play book for the web
+  hosts: localhost
+  become: yes
+  roles: 
+  - "{{component}}"
