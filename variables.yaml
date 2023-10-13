@@ -3,13 +3,13 @@
   become: yes
   tasks:
   - name: for oringtin the 
-    ansible.builtin.debug:
+    ansible.builtin.yum:
       name: "nginx"
       state: install
     tags:
       - mohan
   - name: for pravven
-    ansible.builtin.debug:
+    ansible.builtin.yum:
       name: "nginx"
       state: abscent
     tags: 
