@@ -6,7 +6,7 @@
       msg: "ths hostname is {{ansible_host}}"
   - name: ip 
     ansible.builtin.debug:
-      msg: "the ip addre is {{ansible_default_ipv4.address}}"
+      msg: "the ip addre is {{ansible_default_ipv6.address}}"
   - name: os familty
     ansible.builtin.debug:
       msg: "{{ansible_os_family}}"
