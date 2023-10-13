@@ -17,5 +17,5 @@
       - praveen
   - name: copy the mosules
     ansible.builtin.template:
-      src: template/mohan.j2
+      src: templates/mohan.j2
       dest: /tmp/
