@@ -1,9 +1,6 @@
 - name: usging the tags in asnible 
   hosts: localhost
   become: yes
-  vars:
-  - name: mohan
-  - age: 25
   tasks:
   - name: for oringtin the 
     ansible.builtin.yum:
