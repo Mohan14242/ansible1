@@ -16,9 +16,5 @@
       state: absent
     tags: 
       - praveen
-
-  - name: copy the mosules
-    ansible.builtin.template:
-      src: templates/mohan.conf
-      dest: /tmp/mohan
-  
+    notify:
+    - install nginx
