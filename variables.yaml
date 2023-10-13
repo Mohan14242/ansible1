@@ -1,6 +1,9 @@
 - name: usging the tags in asnible 
   hosts: localhost
   become: yes
+  vars:
+  - name: mohan
+  - age: 25
   tasks:
   - name: for oringtin the 
     ansible.builtin.yum:
@@ -15,3 +18,7 @@
       state: absent
     tags: 
       - praveen
+  - name: copy the mosules
+    ansible.buitlin.copy:
+      src: template/mohan.j2
+      dest: /tmp/
