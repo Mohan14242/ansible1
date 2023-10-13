@@ -8,6 +8,7 @@
       state: installed
     tags:
       - mohan
+      - chiru
   - name: for pravven
     ansible.builtin.yum:
       name: "nginx"
