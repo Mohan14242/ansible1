@@ -5,7 +5,7 @@
   - name: for oringtin the 
     ansible.builtin.yum:
       name: "nginx"
-      state: install
+      state: installed
     tags:
       - mohan
   - name: for pravven
