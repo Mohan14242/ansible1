@@ -11,6 +11,6 @@
   - name: for pravven
     ansible.builtin.yum:
       name: "nginx"
-      state: abscent
+      state: absent
     tags: 
       - praveen
