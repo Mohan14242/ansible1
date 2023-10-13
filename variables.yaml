@@ -1,6 +1,7 @@
 - name: usging the tags in asnible 
   hosts: localhost
   become: yes
+
   tasks:
   - name: for oringtin the 
     ansible.builtin.yum:
@@ -18,6 +19,6 @@
 
   - name: copy the mosules
     ansible.builtin.template:
-      src: templates/mohan.j2
+      src: templates/mohan.conf
       dest: /tmp/mohan
   
