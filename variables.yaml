@@ -1,7 +1,7 @@
 - name: usging the tags in asnible 
   hosts: localhost
   tasks:
-  - name:for oringtin the 
+  - name: for oringtin the 
     ansible.builtin.debug:
       name: nginx
       state: installed
