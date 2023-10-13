@@ -1,12 +1,15 @@
-- name: using the facts in  the playbooks
+- name: usging the tags in asnible 
   hosts: localhost
-  tasks: 
-  - name: printing the system information
+  tasks:
+  - name:for oringtin the 
     ansible.builtin.debug:
-      msg: "ths hostname is {{ansible_host}}"
-  - name: ip 
+      name: nginx
+      state: installed
+    tags:
+      - mohan
+  - name: for pravven
     ansible.builtin.debug:
-      msg: "the ip addre is {{ansible_default_ipv6.address}}"
-  - name: os familty
-    ansible.builtin.debug:
-      msg: "{{ansible_os_family}}"
+      name: nginx
+      state: abscent
+    tags: 
+      - praveen
