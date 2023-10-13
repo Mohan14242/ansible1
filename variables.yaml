@@ -17,4 +17,4 @@
     tags: 
       - praveen
     notify:
-    - install nginx
+    - handlers/install nginx
