@@ -4,13 +4,13 @@
   tasks:
   - name: for oringtin the 
     ansible.builtin.debug:
-      name: nginx
+      name: "nginx"
       state: install
     tags:
       - mohan
   - name: for pravven
     ansible.builtin.debug:
-      name: nginx
+      name: "nginx"
       state: abscent
     tags: 
       - praveen
