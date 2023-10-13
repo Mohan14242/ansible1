@@ -16,5 +16,9 @@
       state: absent
     tags: 
       - praveen
-    notify:
-    - handlers/install nginx
+    notify: install nginx
+  handlers: 
+  - name: install nginx
+    ansible.builtin.yum:
+      name: nginx
+      state: installed
