@@ -15,9 +15,10 @@
       state: absent
     tags: 
       - praveen
+
   - name: copy the mosules
     ansible.builtin.template:
       src: templates/mohan.j2
-      dest: /tmp/
+      dest: /tmp/mohan
     vars_files:
       - vars/main.yml
