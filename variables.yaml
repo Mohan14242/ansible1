@@ -7,18 +7,3 @@
     ansible.builtin.yum:
       name: "nginx"
       state: installed
-    tags:
-      - mohan
-      - chiru
-  - name: for pravven
-    ansible.builtin.yum:
-      name: "nginx"
-      state: absent
-    tags: 
-      - praveen
-    notify: install nginx
-  handlers: 
-  - name: install nginx
-    ansible.builtin.yum:
-      name: nginx
-      state: installed
