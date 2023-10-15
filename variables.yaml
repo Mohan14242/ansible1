@@ -5,5 +5,5 @@
   tasks:
   - name: for oringtin the 
     ansible.builtin.yum:
-      name: "nginx"
+      name: nginx
       state: installed
